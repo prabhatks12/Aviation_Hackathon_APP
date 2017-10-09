@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.prabhat.vistara.Orders">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:background="@drawable/border"
+            android:weightSum="2">
+           <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Order"
+            android:layout_weight="1"
+            android:layout_marginTop="8dp"
+            android:onClick="Savedata"
+            android:background="@color/btncol"
+            android:textColor="#FFF"
+            />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:weightSum="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Rs"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginTop="8dp"
+                />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="0"
+                    android:id="@+id/bill"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:layout_weight="0.5"
+                    android:layout_marginTop="8dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/listorder"
+            android:layout_marginTop="5dp"
+            tools:listitem="@layout/orderslist"
+            >
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

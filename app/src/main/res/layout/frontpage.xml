@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.prabhat.vistara.Frontpage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+    <ImageView
+    android:layout_width="120dp"
+    android:layout_height="120dp"
+    android:id="@+id/frontenter"
+    android:background="@drawable/movieicon"
+    android:onClick="Entertainment"
+    android:layout_marginTop="20dp"
+    android:layout_weight="1"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+        android:alpha="0.3"
+        />
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/frontgames"
+        android:layout_weight="1"
+        android:background="@drawable/games"
+        android:onClick="Games"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:alpha="0.3"
+
+        />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/frontorder"
+        android:background="@drawable/foodicon"
+        android:onClick="Order"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:alpha="0.3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+
+        />
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:id="@+id/frontrev"
+        android:background="@drawable/review"
+        android:onClick="Review"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:alpha="0.3"
+        android:layout_weight="1"
+        />
+        </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="120dp"
+        android:id="@+id/frontbook"
+        android:background="@drawable/bookicon"
+        android:onClick="Book"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:alpha="0.3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        />
+
+        </RelativeLayout>
+
+</LinearLayout>
