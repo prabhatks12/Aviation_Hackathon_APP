@@ -1,5 +1,5 @@
 # Overview:
-Its an app which i developed during a hackathon.So what is does is that it let users:<br />
+Its an app which i developed during a hackathon. So what is does is that it let users:<br />
 - Watch movie 
 - Play games 
 - Play music 
